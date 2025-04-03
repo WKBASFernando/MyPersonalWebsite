@@ -52,21 +52,20 @@ input[type="radio"] {
 
 .image-container {
     position: relative;
-    width: 100%; /* Make sure it adapts */
+    width: 100%; 
     display: flex;
-    justify-content: center; /* Center image horizontally */
-    align-items: center; /* Align image properly */
+    justify-content: center; 
+    align-items: center;
 }
 
 .image-container img {
-    max-width: 100%; /* Prevent overflow */
+    max-width: 100%; 
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
     display: none;
 }
 
-/* Image Display Logic */
 #purelife-mvc:checked ~ .images .image1 {
     display: block;
 }
@@ -138,6 +137,10 @@ footer {
 
 /* 🟢 Mobile Medium (375px) */
 @media (max-width: 375px) {
+    /* body{
+        width: 375px;
+    } */
+
     h1 {
         font-size: 2rem;
     }
@@ -153,6 +156,10 @@ footer {
 
 /* 🟢 Mobile Large (425px) */
 @media (max-width: 425px) {
+    /* body{
+        width: 425px;
+    } */
+
     label {
         width: 230px;
     }
@@ -175,8 +182,8 @@ footer {
         align-items: center;
     }
 
-    .image-container {
-        width: 100%;
+    .image-container img{
+        width: 600px;
     }
 
     .buttons label {
