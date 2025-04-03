@@ -144,12 +144,20 @@ footer {
     label {
         width: 220px;
     }
+
+    .image-container img {
+        width: 300px;
+    }
 }
 
 /* 🟢 Mobile Large (425px) */
 @media (max-width: 425px) {
     label {
         width: 230px;
+    }
+
+    .image-container img {
+        width: 300px;
     }
 }
 
