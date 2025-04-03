@@ -50,15 +50,16 @@ input[type="radio"] {
     display: none;
 }
 
-/* Image Container */
 .image-container {
     position: relative;
-    width: 700px;
-    height: auto;
+    width: 100%; /* Make sure it adapts */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Align image properly */
 }
 
 .image-container img {
-    width: 100%;
+    max-width: 100%; /* Prevent overflow */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
@@ -126,7 +127,7 @@ footer {
     }
 
     .image-container img {
-        width: 300px;
+        width: 200px;
     }
 
     label {
@@ -156,7 +157,9 @@ footer {
         width: 230px;
     }
 
+    
     .image-container img {
+        justify-content: center;
         width: 300px;
     }
 }
