@@ -146,6 +146,10 @@ button a {
         padding: 10px;
     }
 
+    #middleSection {
+        width: 95%;
+    }
+
     #Name h1 {
         font-size: 1.8rem;
     }
