@@ -58,12 +58,7 @@ body {
     height: auto;
 }
 
-#pic:hover {
-    z-index: 3; 
-    opacity: 1; 
-    transform: translate(-50%, -50%) scale(1.95);
-    filter: drop-shadow(0 0 15px #ffcc00);
-}
+
 
 h1 {
     font-size: 3rem;
@@ -159,7 +154,7 @@ button a {
     }
 
     #pic img {
-        width: 250px;
+        width: 200px;
     }
 
     #coding {
@@ -235,6 +230,13 @@ button a {
     #pic img {
         width: 450px;
     }
+
+    #pic:hover {
+        z-index: 3; 
+        opacity: 1; 
+        transform: translate(-50%, -50%) scale(1.95);
+        filter: drop-shadow(0 0 15px #ffcc00);
+    }
 }
 
 /* ===================== 🖥 LAPTOP LARGE (1440px) ===================== */
@@ -249,5 +251,12 @@ button a {
 
     #pic img {
         width: 500px;
+    }
+
+    #pic:hover {
+        z-index: 3; 
+        opacity: 1; 
+        transform: translate(-50%, -50%) scale(1.95);
+        filter: drop-shadow(0 0 15px #ffcc00);
     }
 }
