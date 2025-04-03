@@ -51,7 +51,6 @@ input[type="radio"] {
 }
 
 .image-container {
-    position: relative;
     width: 100%; 
     display: flex;
     justify-content: center; 
@@ -126,7 +125,8 @@ footer {
     }
 
     .image-container img {
-        width: 200px;
+        max-width: 40%; 
+        margin: 0 auto;
     }
 
     label {
@@ -150,7 +150,8 @@ footer {
     }
 
     .image-container img {
-        width: 300px;
+        max-width: 50%; 
+        margin: 0 auto;
     }
 }
 
@@ -163,11 +164,10 @@ footer {
     label {
         width: 230px;
     }
-
     
     .image-container img {
-        justify-content: center;
-        width: 300px;
+        max-width: 60%; 
+        margin: 0 auto;
     }
 }
 
@@ -183,7 +183,8 @@ footer {
     }
 
     .image-container img{
-        width: 600px;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .buttons label {
@@ -194,13 +195,15 @@ footer {
 /* 🔵 Laptop (1024px) */
 @media (max-width: 1024px) {
     .image-container {
-        width: 600px;
+        max-width: 100%;
+        margin: 0 auto;
     }
 }
 
 /* 🔵 Laptop Large (1440px) */
 @media (max-width: 1440px) {
     .image-container {
-        width: 700px;
+        max-width: 100%;
+        margin: 0 auto;
     }
 }
