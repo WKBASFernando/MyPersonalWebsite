@@ -16,9 +16,23 @@
     </header>
     
     <section>
-        <img src="assets/images/PureLifeWhite.png" title="Project Image" alt="Project Image"> <br>
-        <a href="">Pure Life</a> <br>
-        <a href="">Tic Tac Toe</a>
+        <div class="image-container">
+            <input type="radio" id="purelife-mvc" name="project" checked>
+            <input type="radio" id="purelife-layered" name="project">
+            <input type="radio" id="tic-tac-toe" name="project">
+
+            <div class="images">
+                <img src="assets/images/PureLifeWhite.png" class="image1">
+                <img src="assets/images/PureLifeWhite.png" class="image2">
+                <img src="assets/images/Screenshot 2025-04-03 102331.png" id="tic_tac_toe" class="image3">
+            </div>
+        </div>
+
+        <div id="button">
+            <label for="purelife-mvc">Pure Life (MVC)</label> <br>
+            <label for="purelife-layered">Pure Life (Layered)</label> <br>
+            <label for="tic-tac-toe">Tic Tac Toe</label> <br>
+        </div>
     </section>
     
     <footer>
