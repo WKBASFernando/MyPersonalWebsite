@@ -58,7 +58,13 @@ body {
     height: auto;
 }
 
-
+#pic:hover {
+    z-index: 3; 
+    opacity: 1; 
+    transform: translate(-50%, -50%) scale(1.95);
+    filter: drop-shadow(0 0 15px #ffcc00);
+    transition: transform 1s ease-in-out, filter 1s ease-in-out, opacity 1s ease-in-out;
+}
 
 h1 {
     font-size: 3rem;
@@ -175,6 +181,10 @@ button a {
     #pic img {
         width: 300px;
     }
+
+    #middleSection {
+        width: 95%;
+    }
 }
 
 /* ===================== 📱 MOBILE LARGE (425px) ===================== */
@@ -189,6 +199,10 @@ button a {
 
     #pic img {
         width: 350px;
+    }
+
+    #middleSection {
+        width: 95%;
     }
 }
 
@@ -229,34 +243,5 @@ button a {
 
     #pic img {
         width: 450px;
-    }
-
-    #pic:hover {
-        z-index: 3; 
-        opacity: 1; 
-        transform: translate(-50%, -50%) scale(1.95);
-        filter: drop-shadow(0 0 15px #ffcc00);
-    }
-}
-
-/* ===================== 🖥 LAPTOP LARGE (1440px) ===================== */
-@media screen and (max-width: 1440px) {
-    #Name h1 {
-        font-size: 3rem;
-    }
-
-    #Name h3 {
-        font-size: 1.6rem;
-    }
-
-    #pic img {
-        width: 500px;
-    }
-
-    #pic:hover {
-        z-index: 3; 
-        opacity: 1; 
-        transform: translate(-50%, -50%) scale(1.95);
-        filter: drop-shadow(0 0 15px #ffcc00);
     }
 }
