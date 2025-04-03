@@ -1,7 +1,5 @@
-/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* Reset & General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -13,34 +11,70 @@ body {
     background-color: #0d1117;
     color: #ffffff;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
     width: 100vw;
-    overflow: hidden;
-    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.container {
-    display: flex;
-    width: 90%;
-    max-width: 1200px;
-    height: 80vh;
-}
-
-.text-section {
-    flex: 1;
+#Name {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 40px;
-    text-align: left;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+    padding: 50px 0;
+}
+
+#Name h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ffcc00;
+    position: relative;
+    z-index: 2; 
+}
+
+#Name h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2; 
+}
+
+#pic {
+    position: absolute;
+    top: 10%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    opacity: 0.6;
+}
+
+#pic img {
+    width: 500px; 
+    height: auto;
+}
+
+#pic:hover {
+    z-index: 3; 
+    opacity: 1; 
+    transform: translate(-50%, -50%) scale(1.95);
+    filter: drop-shadow(0 0 15px #ffcc00);
 }
 
 h1 {
     font-size: 3rem;
     font-weight: 600;
     color: #ffcc00;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 15px;
 }
 
 h3 {
@@ -50,12 +84,6 @@ h3 {
     margin-bottom: 20px;
 }
 
-h2 {
-    font-size: 2rem;
-    color: #ffcc00;
-    margin-bottom: 15px;
-}
-
 p {
     font-size: 1.2rem;
     font-weight: 300;
@@ -63,32 +91,33 @@ p {
     margin-bottom: 20px;
 }
 
-.image-section {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.image-section img {
-    max-width: 90%;
-    height: auto;
+#middleSection {
+    max-width: fit-content;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
 }
 
-/* Button Container at Bottom */
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 40px;
-    width: 100%;
-    position: absolute;
-    bottom: 20px;
+.coding {
+    margin-top: 80px;
+    filter: drop-shadow(0 0 8px #ffcc00); /* Soft yellow glow */
+    max-width: 100%;
 }
 
+
+
 button {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-top: 40px;
+    margin-right: 140px;
+    margin-left: 140px;
     background: #ffcc00;
     color: #0d1117;
     border: none;
@@ -102,7 +131,7 @@ button {
 
 button:hover {
     background: #e6b800;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 button a {
@@ -110,46 +139,111 @@ button a {
     color: inherit;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
+/* ===================== 📱 MOBILE SMALL (320px) ===================== */
+@media screen and (max-width: 320px) {
+    body {
         flex-direction: column;
-        text-align: center;
-        height: auto;
+        padding: 10px;
     }
 
-    .text-section {
-        align-items: center;
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
-
-    h2 {
+    #Name h1 {
         font-size: 1.8rem;
     }
 
-    p {
+    #Name h3 {
+        font-size: 1rem;
+    }
+
+    #pic img {
+        width: 250px;
+    }
+
+    #coding {
+        width: 200px;
+    }
+}
+
+/* ===================== 📱 MOBILE MEDIUM (375px) ===================== */
+@media screen and (max-width: 375px) {
+    #Name h1 {
+        font-size: 2rem;
+    }
+
+    #Name h3 {
         font-size: 1.1rem;
-        max-width: 100%;
     }
 
-    .button-container {
-        flex-direction: row;
-        gap: 10px;
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
+    #pic img {
+        width: 300px;
+    }
+}
+
+/* ===================== 📱 MOBILE LARGE (425px) ===================== */
+@media screen and (max-width: 425px) {
+    #Name h1 {
+        font-size: 2.2rem;
     }
 
-    .image-section img {
-        max-width: 80%;
+    #Name h3 {
+        font-size: 1.2rem;
+    }
+
+    #pic img {
+        width: 350px;
+    }
+}
+
+/* ===================== 💻 TABLET (768px) ===================== */
+@media screen and (max-width: 768px) {
+    #Name h1 {
+        font-size: 2.5rem;
+    }
+
+    #Name h3 {
+        font-size: 1.4rem;
+    }
+
+    #pic img {
+        width: 400px;
+    }
+
+    p {
+        font-size: 1rem;
+        max-width: 500px;
+    }
+}
+
+/* ===================== 💻 LAPTOP (1024px) ===================== */
+@media screen and (max-width: 1024px) {
+    body {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #Name h1 {
+        font-size: 2.8rem;
+    }
+
+    #Name h3 {
+        font-size: 1.5rem;
+    }
+
+    #pic img {
+        width: 450px;
+    }
+}
+
+/* ===================== 🖥 LAPTOP LARGE (1440px) ===================== */
+@media screen and (max-width: 1440px) {
+    #Name h1 {
+        font-size: 3rem;
+    }
+
+    #Name h3 {
+        font-size: 1.6rem;
+    }
+
+    #pic img {
+        width: 500px;
     }
 }
